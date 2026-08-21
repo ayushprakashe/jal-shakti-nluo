@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jal Shakti Board · NLUO</title>
+  <meta name="description" content="Interactive water literacy portal of the Jal Shakti Board, National Law University Odisha. 2D or 3D. संचय जल, बेहतर कल.">
+  <meta name="theme-color" content="#052a45">
+  <link rel="icon" href="brand/nluo-logo.png">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#app" id="skip">Skip to content</a>
+  <div class="ticker glass" style="border-radius:0;border-left:0;border-right:0">
+    <span>संचय जल, बेहतर कल · Jal Shakti Board, NLU Odisha · SDG 6 · Rainwater harvesting · Recharge · Reuse · Watershed · Naraj, Cuttack · Mahanadi–Kathajodi · 0.5% usable freshwater · &nbsp;&nbsp;&nbsp; संचय जल, बेहतर कल · Jal Shakti Board, NLU Odisha · SDG 6 · Rainwater harvesting · Recharge · Reuse · Watershed · Naraj, Cuttack · Mahanadi–Kathajodi · 0.5% usable freshwater ·</span>
+  </div>
+  <header class="site-header glass" style="border-radius:0;border-left:0;border-right:0">
+    <div class="header-inner">
+      <a class="brand" href="#/">
+        <img src="brand/nluo-logo.png" alt="">
+        <span>
+          <span class="brand-name" id="brand-name">Jal Shakti Board</span>
+          <span class="brand-sub" id="brand-sub">NLU Odisha</span>
+        </span>
+      </a>
+      <nav class="nav-desktop" id="nav-desk"></nav>
+      <div class="header-tools">
+        <div class="seg glass glass-pill" role="group" aria-label="View">
+          <button type="button" data-view-2d>2D</button>
+          <button type="button" data-view-3d>3D</button>
+        </div>
+        <div class="seg glass glass-pill" role="group" aria-label="Language">
+          <button type="button" data-lang-en>EN</button>
+          <button type="button" data-lang-hi>हिं</button>
+        </div>
+        <button class="menu-btn" id="menu-btn" type="button" aria-label="Menu">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="nav-mob"></nav>
+  </header>
+  <main id="app"></main>
+  <footer>
+    <div class="foot">
+      <div style="display:flex;gap:0.8rem;align-items:flex-start">
+        <img src="brand/jal-shakti-logo.png" alt="">
+        <div>
+          <p style="margin:0;font-family:var(--font-display);font-size:1.15rem">Jal Shakti Board · NLUO</p>
+          <p style="margin:.2rem 0 0;color:var(--foam-muted)" id="foot-blurb"></p>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:.8rem 1.1rem;font-size:.9rem">
+        <a href="https://nluo.ac.in/jal-shakti-board/">Official board</a>
+        <a href="mailto:jsb@nluo.ac.in">jsb@nluo.ac.in</a>
+        <a href="#/map">Campus</a>
+        <a href="#/team">Team</a>
+        <a href="#/news">News</a>
+        <a href="#/sources">Sources</a>
+        <a href="#/pledge">Pledge</a>
+        <a href="#/links">Quick links</a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
